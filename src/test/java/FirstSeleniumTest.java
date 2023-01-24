@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class FirstSeleniumTest {
     WebDriver driver;
-    By okayField = By.cssSelector("[placeholder=\"Email\"]");
+    By emailField = By.cssSelector("[placeholder=\"Email\"]");
     By passwordField = By.cssSelector("[placeholder=\"Password\"]");
     By confirm_password = By.cssSelector("[ng-reflect-name=\"confirm_password\"]");
 
