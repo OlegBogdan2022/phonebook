@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88dc098b-b873-4022-8de8-7e82737904ff" name="Changes" comment="added enter">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RegisterNewUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="88dc098b-b873-4022-8de8-7e82737904ff" name="Changes" comment="added TestBase class &#10;refactor RegisterNeUserTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegisterNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegisterNewUserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674553148358</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added TestBase class &#10;refactor RegisterNeUserTest">
+      <created>1674559190936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674559190936</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,7 +186,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added enter" />
-    <option name="LAST_COMMIT_MESSAGE" value="added enter" />
+    <MESSAGE value="added TestBase class &#10;refactor RegisterNeUserTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="added TestBase class &#10;refactor RegisterNeUserTest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
