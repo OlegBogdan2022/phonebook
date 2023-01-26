@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 public class RegisterNewUserTest extends TestBase {
 
-
     By loginForm = By.id("login-form");
 
     By userRegistrationLink = By.cssSelector("[href=\"/user/registration\"]");
@@ -27,17 +26,18 @@ public class RegisterNewUserTest extends TestBase {
     @Test
     public void registerNewUser() {
         String userData = faker.internet().emailAddress();
+        String password = faker.internet().password();
         String expectedErrorMessage = "noErrorMsg";
 
         driver.findElement(loginForm).isDisplayed();
         driver.findElement(userRegistrationLink).click();
         driver.findElement(registrationForm).isDisplayed();
         fillField(userData, emailField);
-        fillField(userData, passwordFiled);
-        fillField(userData, confirmPasswordField);
+        fillField(password, passwordFiled);
+        fillField(password, confirmPasswordField);
         driver.findElement(loginButton).click();
         String actualErrorMessage = driver.findElement(errorMessageBlock).getText();
-        Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
+        Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "");
     }
 }
 
