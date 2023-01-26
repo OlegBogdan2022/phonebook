@@ -25,10 +25,13 @@ public class RegisterNewUserTest extends TestBase {
 
     @Test
     public void registerNewUser() {
+
+        //Arange
+
         String userData = faker.internet().emailAddress();
         String password = faker.internet().password();
         String expectedErrorMessage = "noErrorMsg";
-
+        // Act
         driver.findElement(loginForm).isDisplayed();
         driver.findElement(userRegistrationLink).click();
         driver.findElement(registrationForm).isDisplayed();
@@ -37,7 +40,9 @@ public class RegisterNewUserTest extends TestBase {
         fillField(password, confirmPasswordField);
         driver.findElement(loginButton).click();
         String actualErrorMessage = driver.findElement(errorMessageBlock).getText();
-        Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "");
+        // Assert
+        String err = "actual error message is not equal expected";
+        Assert.assertEquals(actualErrorMessage, expectedErrorMessage, err);
     }
 }
 
